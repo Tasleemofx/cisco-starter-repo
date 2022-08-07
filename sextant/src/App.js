@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import Banner from "./components/Banner"
+import Exhibit from "./components/Exhibit"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <Banner />
+      <Exhibit heading="HEADING" childcomp="child"/>
     </div>
   );
 }
