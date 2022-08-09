@@ -6,7 +6,10 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Exhibit heading="HEADING" childcomp="child"/>
+      <div className="cards">
+          <Exhibit heading="HEADING" childcomp="child" version="ipV4"/>
+          <Exhibit heading="HEADING" childcomp="child" version="ipV6" />
+      </div>
     </div>
   );
 }
