@@ -4,24 +4,33 @@
   box-sizing: border-box;
 }
 .App{
-  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cards{
+
+.exhibit{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.exhibit{
+  align-items: center;
   border: black 1px solid;
   margin: 1em;
   padding: 0.5em;
   border-radius: 20px;
   text-align: center;
   box-shadow: 5px 5px lightblue;
-  height: 10em;
+  height: 12em;
   width: 15em;
 }
 
+.add{
+  border: lightblue 2px solid ;
+  padding: 5px 3px;
+  margin: 10px 0;
+  border-radius: 30px;
+}
 @media screen and (min-width: 500px){
   .cards {
       display: flex;

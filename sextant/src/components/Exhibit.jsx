@@ -1,10 +1,9 @@
-import Address from "./Address"
-const Exhibit=({heading, childcomp, version})=>{
+
+const Exhibit=({ children })=>{
+
     return (
         <div className="exhibit">
-            <h3>{heading}</h3>
-            <p>{childcomp}</p>
-            <Address version={version}/>
+            { children }
         </div>
     )
 }

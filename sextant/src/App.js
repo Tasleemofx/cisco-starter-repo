@@ -1,5 +1,7 @@
-import Banner from "./components/Banner"
-import Exhibit from "./components/Exhibit"
+import Banner from "./components/Banner";
+import Exhibit from "./components/Exhibit";
+import Address from "./components/Address";
+import Latency from "./components/Latency"
 import './App.css';
 
 function App() {
@@ -7,8 +9,15 @@ function App() {
     <div className="App">
       <Banner />
       <div className="cards">
-          <Exhibit heading="HEADING" childcomp="child" version="ipV4"/>
-          <Exhibit heading="HEADING" childcomp="child" version="ipV6" />
+          <Exhibit>
+            <Address version="ipV4"/>
+          </Exhibit>
+          <Exhibit>
+            <Address version="ipV6"/>
+          </Exhibit>
+          <Exhibit>
+            <Latency />
+          </Exhibit>
       </div>
     </div>
   );

@@ -19,10 +19,10 @@ const Address= ({version})=>{
     );
         
     return(
-        <h1>
-            {version} Address: <br/>
-            {ipAddress}
-        </h1>
+        <div>
+           <h1> {version} Address: </h1>
+            <h3 className="add">{ipAddress}</h3>
+        </div>
     )
 }
 
